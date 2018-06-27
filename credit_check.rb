@@ -4,8 +4,7 @@ def get_card_number
   number = gets.chomp
   return number
 end
-# Your Luhn Algorithm Here
-  #reverse the digits
+
 def reverse(card)
   card = card.reverse
   return card
@@ -25,7 +24,7 @@ def convert_to_i(card)
 end
 
 def check(card)
-  #puts "Your card number is: #{card_number}"
+
 end
 
 
@@ -33,7 +32,6 @@ def double_every_other_number(card)    #return to me
    card_array = []
    index = 0
    card.each do |number|
-     #puts index
      if (index % 2) != 0
        card_array << number * 2
      else
