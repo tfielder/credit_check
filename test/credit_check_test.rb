@@ -11,7 +11,9 @@ class CreditCheckTest < Minitest::Test
   end
 
   def test_reverses_card_number
-    skip
+    check2 = CreditCheck.new
+    check2 = check2.reverse(1234)
+    assert_equal "4321", check2
   end
 
   def test_card_string_to_characters
