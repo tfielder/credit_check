@@ -6,8 +6,8 @@ require "minitest/pride"
 
 class CreditCheckTest < Minitest::Test
   def test_ininitiates_a_class
-    #assert CreditCheck.new
-    #require "pry"; binding.pry
+    check1 = CreditCheck.new
+    assert_instance_of CreditCheck, check1
   end
 
   def test_reverses_card_number
